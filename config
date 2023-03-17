@@ -3,5 +3,5 @@ Host tun
 		User tunnel
 		IdentityFile /home/secret/id_rsa
 		ServerAliveInterval 30
-		RemoteForward 2222 localhost:22
+		RemoteForward 2222 localhost:8921
 		ProxyCommand /home/secret/proxytunnel -v -E -z -p ec2-3-11-119-9.eu-west-2.compute.amazonaws.com:443 -d 127.0.0.1:22
